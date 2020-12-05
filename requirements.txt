@@ -1,0 +1,6 @@
+emoji==0.6.0
+numpy==1.19.4
+praw==7.1.0
+spidev==3.5
+twython==3.8.2
+Pillow==8.0.1
