@@ -43,22 +43,16 @@ start_time = time.time()
 def run():
     for comment in sub.stream.comments(pause_after=None, skip_existing=True):
         while submissions.id == comment.submission:
-               #comment != None
-            ap = 't3_'
-            ap += zz
+		ap = 't3_'
+		ap += zz
 
             if ap == comment.parent_id:
                 print(30*'_')
-                #    comment.body = textwrap.fill(comment.body, width = 35)
-                #    print(comment.body)
-                #    parent_id = str(comment.parent())
-                #    original = reddit.comment(parent_id)
                 comment.body = textwrap.fill(comment.body, width = 35)
                 print(comment.body)
                 print(comment.author)
-                #    comment.body = re.sub(r"' ", "'", comment.body)
+                comment.body = re.sub(r"' ", "'", comment.body)
                 printToDisplay(f"{comment.body}\n-{comment.author}")
-                #time.sleep(5)
                 run()
             else:
                 run()
