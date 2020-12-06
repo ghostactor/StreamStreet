@@ -22,4 +22,4 @@ requires
 sudo pip3 install -r requirements.txt
 
 
-https://imgur.com/EU1L1Vo
+<img src="https://i.imgur.com/EU1L1Vo.gif">
