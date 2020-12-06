@@ -39,12 +39,11 @@ zz = submissions.id
 
 start_time = time.time()
 
-#print(zz)
 def run():
     for comment in sub.stream.comments(pause_after=None, skip_existing=True):
         while submissions.id == comment.submission:
-		ap = 't3_'
-		ap += zz
+            ap = 't3_'
+            ap += zz
 
             if ap == comment.parent_id:
                 print(30*'_')
