@@ -33,7 +33,7 @@ piprint = sub.hot(limit=1)
 for submissions in piprint:
 	if submissions.stickied:
 		print('{}'.format(submissions.title))
-		title = textwrap.fill(submissions.title, width = 20)
+		title = textwrap.fill(submissions.title, width = 18)
 		printToDisplay(f"{title}")
 
 zz = submissions.id
