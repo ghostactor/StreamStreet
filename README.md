@@ -21,5 +21,4 @@ requires
 
 sudo pip3 install -r requirements.txt
 
-
-<img src="https://i.imgur.com/EU1L1Vo.gif" width="300">
+https://i.imgur.com/EU1L1Vo.gif
