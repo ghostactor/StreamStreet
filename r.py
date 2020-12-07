@@ -53,6 +53,7 @@ def run():
                 print(comment.author)
                 comment.body = re.sub(r"' ", "'", comment.body)
                 printToDisplay(f"{comment.body}\n-{comment.author}")
+		time.sleep(1)
                 run()
             else:
                 run()
