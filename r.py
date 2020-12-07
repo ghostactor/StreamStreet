@@ -48,7 +48,7 @@ def run():
 
             if ap == comment.parent_id:
                 print(30*'_')
-                comment.body = textwrap.fill(comment.body, width = 32)
+                comment.body = textwrap.fill(comment.body, width = 34)
                 print(comment.body)
                 print(comment.author)
                 comment.body = re.sub(r"' ", "'", comment.body)
