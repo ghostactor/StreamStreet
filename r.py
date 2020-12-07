@@ -16,12 +16,12 @@ epd = epd2in13_V2.EPD()
 epd.init(epd.FULL_UPDATE)
 epd.Clear(0xFF)
 
-font14 = ImageFont.truetype(os.path.join(picdir, 'GnuUnifont.ttf'), 14)
+font15 = ImageFont.truetype(os.path.join(picdir, 'GnuUnifont.ttf'), 15)
 
 def printToDisplay(string):
     image = Image.new('1', (epd.height, epd.width), 255)
     draw = ImageDraw.Draw(image)
-    draw.text((0, 10), string, font = font14, fill = 0)
+    draw.text((0, 10), string, font = font15, fill = 0)
     epd.display(epd.getbuffer(image))
 
 
@@ -32,7 +32,7 @@ piprint = sub.hot(limit=1)
 for submissions in piprint:
 	if submissions.stickied:
 		print('{}'.format(submissions.title))
-		title = textwrap.fill(submissions.title, width = 29)
+		title = textwrap.fill(submissions.title, width = 27)
 		printToDisplay(f"{title}")
 
 zz = submissions.id
