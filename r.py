@@ -33,7 +33,7 @@ piprint = sub.hot(limit=1)
 for submissions in piprint:
 	if submissions.stickied:
 		print('{}'.format(submissions.title))
-		title = textwrap.fill(submissions.title, width = 18)
+		title = textwrap.fill(submissions.title, width = 29)
 		printToDisplay(f"{title}")
 
 zz = submissions.id
@@ -48,7 +48,7 @@ def run():
 
             if ap == comment.parent_id:
                 print(30*'_')
-                comment.body = textwrap.fill(comment.body, width = 35)
+                comment.body = textwrap.fill(comment.body, width = 32)
                 print(comment.body)
                 print(comment.author)
                 comment.body = re.sub(r"' ", "'", comment.body)
