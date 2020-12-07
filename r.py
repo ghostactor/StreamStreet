@@ -16,7 +16,7 @@ epd = epd2in13_V2.EPD()
 epd.init(epd.FULL_UPDATE)
 epd.Clear(0xFF)
 
-font15 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 15)
+font15 = ImageFont.truetype(os.path.join(picdir, 'GnuUnifont.ttf'), 15)
 
 def printToDisplay(string):
     image = Image.new('1', (epd.height, epd.width), 255)
